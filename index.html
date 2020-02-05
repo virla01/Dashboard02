@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>AxDashbard - Dashboard02</title>
+
+    <!-- Descripcion del sitio -->
+    <meta name="description" content="Descripción de página. No más de 155 caracteres." />
+
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="author" href=" https://plus.google.com/[Perfil_de_Google+]/posts" />
+    <link rel="publisher" href="https://plus.google.com/[Google+_Perfil_de_Página]" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Nombre o título acá">
+    <meta itemprop="description" content="Esta es la descripción de la página">
+    <meta itemprop="image" content="http://www.ejemplo.com/imagen.jpg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Título de la página">
+    <meta name="twitter:description" content="Descripción de la página menor a 200 caracteres">
+    <meta name="twitter:creator " content="@author_handle">
+    <!-- Imagen de sumario de Twitter debe al menos tener 280x150px -->
+    <meta name="twitter:image:src" content="http://www.ejemplo.com/imagen.html">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Título aquí" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=" http://www.ejemplo.com/" />
+    <meta property="og:image" content=" http://ejemplo.com/imagen.jpg" />
+    <meta property="og:description" content="Descripcion aquí" />
+    <meta property="og:site_name" content="Nombre del sitio, ej. MiTienda" />
+    <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+    <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+    <meta property="article:section" content="Sección del artículo" />
+    <meta property="article:tag" content="Etiqueta del artículo" />
+    <meta property="fb:admins" content="Número de ID de Facebook" />
+
+    <!-- Fonts -->
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap " rel="stylesheet ">
+
+    <!-- Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap " rel="stylesheet ">
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet " href="css/ax-portenio.css ">
+    <link rel="stylesheet " href="css/ax-fonts.css ">
+    <link rel="stylesheet " href="css/ax-logos.css ">
+    <link rel="stylesheet " href="css/template.css ">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+
+</head>
+
+<body>
+
+    <!-- Contenedor general -->
+    <div class="container-grid active" id="contenedor">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+
+            </div>
+
+            <div class="header-middle">
+                <button class="boton-menu" id="boton-menu"><i class="ax ax-bars"></i></button>
+                <img src="images/logo.png" alt="" class="img-responsive logo">
+                <span class="textLogo">axDashbard 2.0</span>
+            </div>
+
+            <div class="d-sm-none d-md-flex header-right">
+                <ul class="navbar-top_right">
+                    <li class="navbar-top_right-item"></li>
+                    <li class="navbar-top_right-item m-r-4"><a href="#">Site&nbsp;&nbsp;<i class="ax ax-sign-out"></i></a></li>
+                    <li class="navbar-top_right-item dropdown">
+                        <a href="#" class="dropdown-toggle user-menu" data-toggle="dropdown">
+                            <img src="images/lalo.jpg" alt="">
+                            <span>Admin</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="dropdown-icon ax ax-user"></i>&nbsp;&nbsp;Profile</a></li>
+                            <li><a href="#"><i class="dropdown-icon ax ax-cog"></i>&nbsp;&nbsp;Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="pages-signin.html"><i class="dropdown-icon ax ax-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <!-- Fin Header -->
+
+        <nav class="navbar">
+            <div class="navbar-userprofile">
+                <img src="images/lalo.jpg" alt="" class="img-responsive fotouser">
+                <div class="navbar-userprofile_text">
+                    Bienvenido
+                    <b>Admin</b>
+                </div>
+                <ul class="navbar-userprofile_tool">
+                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Perfil usuario" class="transparent circle"><i class="ax ax-user-circle"></i></a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Notificaciones" class="transparent circle"><i class="ax ax-bell"></i></a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Logout" class="transparent circle"><i class="ax ax-power-off"></i></a></li>
+                </ul>
+            </div>
+            <ul class="navbar-lista">
+                <li class="navbar-item active">
+                    <a href="#" class="navbar-link" title="Dashboard">
+                        <i class="ax ax-tachometer-alt"></i> <span class="navbar-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" title="Usuarios">
+                        <i class="ax ax-user-friends"></i> <span class="navbar-text">Usuarios</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" title="Menu">
+                        <i class="ax ax-list-alt"></i> <span class="navbar-text ">Menues</span>
+                    </a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="# " class="navbar-link" title="Configuración">
+                        <i class="ax ax-tools"></i> <span class="navbar-text">Configuración</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" title="Articulos">
+                        <i class="ax ax-newspaper"></i> <span class="navbar-text">Articulos</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" title="Imagenes">
+                        <i class="ax ax-images"></i> <span class="navbar-text">Imagemes</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" title="Idiomas">
+                        <i class="ax ax-globe-americas"></i> <span class="navbar-text">Idiomas</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" title="Componentes">
+                        <i class="ax ax-cubes"></i> <span class="navbar-text">Componentes</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" title="Archivos">
+                        <i class="ax ax-folders"></i> <span class="navbar-text">Archivos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <main class="main">
+            <div class="full">
+
+                <div class="container-full">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="title-toolbar shadow-sm">
+                                <div class="title-toolbar_iconSection">
+                                    <i class="ax ax-tachometer-alt "></i>
+                                </div>
+                                <div class="title-toolbar_title">Dashboard</div>
+                                <span class="title-toolbar_description">
+                                    Interfaz de usuario para administrar las aplicaciones del sistema.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Fin Main -->
+
+        <!-- Footer -->
+        <footer class="footer ">
+            <div class="footer-toolbar">
+                <div class="btn-group pull-right">
+                    <p style="color: #FFF;"><span style="color: rgba(255,255,255,.5);">Diseño:</span>&nbsp;&nbsp;<i class="axl axl-aspectox m-r-1" style="color: #CB4854;" title="aspectox"></i>aspecto-x</span>&nbsp;&nbsp;<span style="color: rgba(255,255,255,.5);">- © 2020</span></p>
+                </div>
+                <div class="btn-group viewsite"><a href="#" target="_blank"><i class="ax ax-sign-out m-r-2" aria-hidden="true"></i>Ver sitio</a><span class="btn-group separator"></span></div>
+                <div class="btn-group loggedin-users"><span class="badgee badge-light badge-pill m-r-2">0</span>Visitantes<span class="btn-group separator"></span></div>
+                <div class="btn-group backloggedin-users"><span class="badgee badge-light badge-pill m-r-2">1</span>Administradores<span class="btn-group separator"></span></div>
+                <div class="btn-group no-unread-messages"><a href="/administrator/index.php?option=com_messages"><span class="badgee badge-light badge-pill m-r-2">0</span>Mensajes</a><span class="btn-group separator"></span></div>
+                <div class="btn-group logout"><a href="#"><i class="ax ax-power-off m-r-2" aria-hidden="true"></i>Desconectar</a></div>
+            </div>
+        </footer>
+        <!-- Fin Footer -->
+
+    </div>
+    <!-- Fin Contenedor general -->
+
+    <div class="config-template">
+        <span class="button"><i class="ax ax-cogs"></i></span>
+        <h5>Config Theme</h5>
+        <div class="colors">
+            <a href="#" class="toggle-default" id="toggle-default"></a>
+            <a href="#" class="toggle-red" id="toggle-red"></a>
+            <a href="#" class="toggle-blue" id="toggle-blue"></a>
+            <a href="#" class="toggle-green" id="toggle-green"></a>
+            <a href="#" class="toggle-violet" id="toggle-violet"></a>
+        </div>
+    </div>
+
+    <!-- Archivos Js -->
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery-3.4.1.slim.js"></script>
+    <script src="js/ax-portenio.js"></script>
+
+    <script src="js/ax.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        document.body.onload = () => {
+
+            const defaultBtn = document.querySelector('#toggle-default');
+            const redBtn = document.querySelector('#toggle-red');
+            const blueBtn = document.querySelector('#toggle-blue');
+            const greenBtn = document.querySelector('#toggle-green');
+            const violetBtn = document.querySelector('#toggle-violet');
+            document.documentElement.className = 'default';
+
+            defaultBtn.addEventListener('click', (e) => {
+                document.documentElement.className = 'default';
+            })
+
+            redBtn.addEventListener('click', (e) => {
+                document.documentElement.className = 'red';
+            })
+
+            blueBtn.addEventListener('click', (e) => {
+                document.documentElement.className = 'blue';
+            })
+
+            greenBtn.addEventListener('click', (e) => {
+                document.documentElement.className = 'green';
+            })
+
+            violetBtn.addEventListener('click', (e) => {
+                document.documentElement.className = 'violet';
+            })
+        }
+    </script>
+
+</body>
+
+</html>
